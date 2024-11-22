@@ -27,16 +27,20 @@ if (isset($postData['emailI']) &&  isset($postData['passwordI'])) {
         }
         
     	else  {
-			$sqlAdd = 'INSERT INTO users(`password`, mail) VALUES (:pw, :mail)';
+			$sqlAdd = 'INSERT INTO users(`password`, mail,username) VALUES (:pw, :mail,:un)';
         	$addStatement = $mysqlClient->prepare($sqlAdd);
-        	$addStatement->execute(['pw' => $postData['passwordI'],'mail'=>$postData['emailI']]);
-			$inscriptedUser = ['email' => $postData['emailI'],];
+        	$addStatement->execute([
+				'pw' => $postData['passwordI'],
+				'mail'=>$postData['emailI'],
+				'un'=>$postData['usernameI']
+			]);
+			$signedUser = ['username' => $postData['usernameI'],];
     	}
 	}
 }
 ?>
 
-<?php if (!isset($inscriptedUser)) : ?>
+<?php if (!isset($signedUser)) : ?>
 	<form action="accueil.php" method="POST">
     	<!-- si message d'erreur on l'affiche -->
     	<?php if (isset($errorMessage)) : ?>
@@ -45,12 +49,16 @@ if (isset($postData['emailI']) &&  isset($postData['passwordI'])) {
         	</div>
     	<?php endif; ?>
     	<div class="mb-3">
-			<div id="email-help" class="form-text">Email</div>
-        	<input type="email" class="form-control" id="emailI" name="emailI" aria-describedby="email-help" placeholder="you@exemple.com">
+			<div class="form-text">Email</div>
+        	<input type="email" class="form-control"  name="emailI" aria-describedby="email-help" placeholder="you@exemple.com">
     	</div>
+		<div class="mb-3">
+			<div>Username</div>
+			<input class="form-control" name="usernameI">
+		</div>
     	<div class="mb-3">
         	<label for="password" class="form-label">Mot de passe</label>
-        	<input type="password" class="form-control" id="passwordI" name="passwordI">
+        	<input type="password" class="form-control" name="passwordI">
     	</div>
     	<button type="submit" class="btn-connexion">S'inscrire</button>
 	</form>
