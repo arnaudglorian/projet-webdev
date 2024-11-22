@@ -49,6 +49,8 @@ nav a:hover {
 }
 
 
+/*Listes des services*/
+
 .visites{
     color:black;
     text-align:center;
@@ -75,4 +77,33 @@ nav a:hover {
     color:black;
     text-align:center;
 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer .instagram {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .instagram img, .instagram-logo svg {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px; /* Ajoute des coins arrondis (utile pour les images) */
+}
+
+footer .instagram:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effet d'ombre au survol */
 }
