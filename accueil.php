@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title> Parc animalier Barben</title>
-    <link rel="stylesheet" type="text/css" href ="styleP.css">
-    <script type="text/javascript" src="jsprojet.js"></script>
+    <link rel="stylesheet" type="text/css" href ="accueil.css">
+    <script type="text/javascript" src="accueil.js"></script>
     <link rel="stylesheet" type="text/css" href ="boutonConn.css">
     <script type="text/javascript" src="boutonConn.js"></script>
 </head>
