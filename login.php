@@ -34,7 +34,7 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
             	$user['password'] === $postData['password']
         	) {
             	$loggedUser = [
-                	'email' => $user['mail'],
+                	'username' => $user['username'],
             	];
         	}
     	}
@@ -74,6 +74,6 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
 	<!-- Si utilisateur/trice bien connectée on affiche un message de succès -->
 <?php else : ?>
 	<div class="alert alert-success" role="alert">
-    	Bonjour <?php echo $loggedUser['email']; ?> et bienvenue sur le site !
+    	Bonjour <?php echo $loggedUser['username']; ?> et bienvenue sur le site !
 	</div>
 <?php endif; ?>

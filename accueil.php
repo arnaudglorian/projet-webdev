@@ -54,7 +54,16 @@
     <h2>Bienvenue au Parc animalier de la Barben</h2>
     <p>Un lieu unique pour découvrir les merveilles de la faune et de la flore.</p>
     <?php if (isset($loggedUser)) : ?>
-            <p>Bienvenue <?php echo $loggedUser['email']; ?> !</p>
+            <p>Bienvenue <?php echo $loggedUser['username']; ?> !</p>
+            <script>
+                document.getElementsByClassName("btn-connexion").style.display = "none";
+            </script>
+    <?php endif; ?>
+    <?php if (isset($signedUser)) : ?>
+            <p>Bienvenue <?php echo $signedUser['username']; ?> !</p>
+            <script>
+                document.getElementsByClassName("btn-connexion").style.display = "none";
+            </script>
     <?php endif; ?>
 </div>
 
