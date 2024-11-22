@@ -13,7 +13,7 @@
      <!-- En-tête -->
      <header>
         <a href="accueil.php">
-            <img src="C:\Users\titou\OneDrive - yncréa\Documents\ISEN\Dev web\Projet\Photo_Projet\Logo_Parc_animalier_de_La_Barben.JPEG" alt="Logo du site" class="logo">
+            <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/Logo_Parc_animalier_de_La_Barben.JPEG?raw=true" alt="Logo du site" class="logo">
         </a>
         <h1>Parc animalier de la Barben</h1>
         <p>Découvrez la faune sauvage au cœur de notre réserve</p>
@@ -64,7 +64,7 @@
  <!-- Plan du parc -->
 <div class="section" id="plan">
     <h2>Plan du parc</h2>
-    <img src="C:\Users\titou\OneDrive - yncréa\Documents\ISEN\Dev web\Projet\Photo_Projet\PLANS-DU-PARC-2024-WEB-FR-1.jpg" alt="Plan du parc" width="1100" et height="600">
+    <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/PLANS-DU-PARC-2024-WEB-FR-1.jpg?raw=true" alt="Plan du parc" width="1100" et height="600">
 </div>
 
 <!-- Section Contact -->
