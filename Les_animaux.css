@@ -76,6 +76,7 @@ nav a:hover {
 .clickable-card img {
     max-width: 100%;
     border-radius: 8px;
+    
 }
 
 /* Modal styles */
@@ -127,13 +128,14 @@ nav a:hover {
     
 }
 
-.carousel-item.active p {
-
-    font-size: 20px;
+.carousel-item.active {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .carousel img {
-    width: 100%;
+    max-width: 80%; /* Réduisez la largeur de l'image */
+    max-height: 300px; /* Limitez la hauteur de l'image */
     border-radius: 8px;
 }
 
@@ -172,4 +174,123 @@ footer {
 
 footer p {
     margin: 5px;
+}
+
+.ListesAnimaux {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+.Marabout {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.Marabout:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.Marabout h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.Marabout img {
+    width: 100%;
+    height: auto;
+}
+
+.Cygogne {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.Cygogne:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.Cygogne h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.Cygogne img {
+    width: 100%;
+    height: auto;
+}
+
+.MoutonNoir {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.MoutonNoir:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.MoutonNoir h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.MoutonNoir img {
+    width: 100%;
+    height: auto;
+}
+
+.Yack {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.Yack:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.Yack h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.Yack img {
+    width: 100%;
+    height: auto;
 }
