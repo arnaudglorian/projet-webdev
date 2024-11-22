@@ -457,3 +457,57 @@ footer p {
     height: auto;
 }
 
+.tortue {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.tortue:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.tortue h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.tortue img {
+    width: 100%;
+    height: auto;
+}
+
+.ibis {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.ibis:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.ibis h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.ibis img {
+    width: 100%;
+    height: auto;
+}
+
