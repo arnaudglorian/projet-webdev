@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les animaux - Parc animalier de la Barben</title>
+    <link rel="stylesheet" href="Les_animaux.css">
+    <script type ="text/javascript" src="Les_animaux.js"></script>
+</head>
+<body>
+
+<!-- En-tête -->
+<header  class="header">
+    <h1 class="titre">Les animaux</h1>
+</header>
+
+
+<!-- Menu de navigation -->
+<nav>
+    <a href="Accueil.html">Acueil</a>
+    <a href="#contact">Contact</a>
+    <a href="#avis">Avis</a>
+    <a href="Les_animaux.html">Les animaux</a>
+    <a href="billeterie.html">Billeterie</a>
+    </nav>
+
+
+    <div class="container">
+        <!-- Carte cliquable -->
+        <div class="clickable-card" onclick="openCarousel()">
+            <img src="https://via.placeholder.com/300" alt="Image Exemple">
+            <h5>Titre de l'image</h5>
+        </div>
+    </div>
+
+    <!-- Modal avec Carrousel -->
+    <div class="modal" id="carouselModal">
+        <div class="modal-content">
+            <div class="carousel">
+                <span class="close-button" onclick="closeCarousel()">&times;</span>
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/600x400" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+2" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+3" alt="Image 3">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Section Contact -->
+
+<footer id="contact">
+    <p>Contactez-nous : parcanimalier@labarbene.fr | Téléphone : 01 23 45 67 89</p>
+    <p>&copy; La barbene - Tous droits réservés</p>
+</footer>
+</body>
+</html>
