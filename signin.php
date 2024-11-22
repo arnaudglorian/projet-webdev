@@ -12,7 +12,7 @@ try {
 }
 
 if (isset($postData['emailI']) &&  isset($postData['passwordI'])) {
-	$sqlQuery = 'SELECT * FROM `1` WHERE mail = :email';
+	$sqlQuery = 'SELECT * FROM users WHERE mail = :email';
     $statment = $mysqlClient->prepare($sqlQuery);
     $statment->execute(['email' => $postData['emailI']]);
     $user = $statment->fetch();
@@ -27,9 +27,9 @@ if (isset($postData['emailI']) &&  isset($postData['passwordI'])) {
         }
         
     	else  {
-			$sqlAdd = 'INSERT INTO `1`(`first`, mail) VALUES (:firstname, :mail)';
+			$sqlAdd = 'INSERT INTO users(`password`, mail) VALUES (:pw, :mail)';
         	$addStatement = $mysqlClient->prepare($sqlAdd);
-        	$addStatement->execute(['firstname' => $postData['passwordI'],'mail'=>$postData['emailI']]);
+        	$addStatement->execute(['pw' => $postData['passwordI'],'mail'=>$postData['emailI']]);
 			$inscriptedUser = ['email' => $postData['emailI'],];
     	}
 	}
@@ -37,7 +37,7 @@ if (isset($postData['emailI']) &&  isset($postData['passwordI'])) {
 ?>
 
 <?php if (!isset($inscriptedUser)) : ?>
-	<form action="FrontP.php" method="POST">
+	<form action="accueil.php" method="POST">
     	<!-- si message d'erreur on l'affiche -->
     	<?php if (isset($errorMessage)) : ?>
         	<div class="alert alert-danger" role="alert">

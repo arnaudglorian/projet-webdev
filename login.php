@@ -20,9 +20,9 @@ try {
 
 // Validation du formulaire
 if (isset($postData['email']) &&  isset($postData['password'])) {
-	$sqlQuery = 'SELECT * FROM `1` WHERE `first`=:firstname AND `mail`=:email';
+	$sqlQuery = 'SELECT * FROM users WHERE `password`=:pw AND mail=:email';
 	$resultStatement = $mysqlClient->prepare($sqlQuery);
-	$resultStatement->execute(['firstname' => $postData['password'],'email'=>$postData['email']]);
+	$resultStatement->execute(['pw' => $postData['password'],'email'=>$postData['email']]);
 	$user = $resultStatement->fetchAll();
 	
 	if (!filter_var($postData['email'], FILTER_VALIDATE_EMAIL)) {
@@ -31,7 +31,7 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
     	foreach ($user as $user) {
         	if (
             	$user['mail'] === $postData['email'] &&
-            	$user['first'] === $postData['password']
+            	$user['password'] === $postData['password']
         	) {
             	$loggedUser = [
                 	'email' => $user['mail'],
@@ -54,7 +54,7 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
    	Si utilisateur/trice est non identifié(e), on affiche le formulaire
 	-->
 <?php if (!isset($loggedUser)) : ?>
-	<form action="FrontP.php" method="POST">
+	<form action="accueil.php" method="POST">
     	<!-- si message d'erreur on l'affiche -->
     	<?php if (isset($errorMessage)) : ?>
         	<div class="alert alert-danger" role="alert">

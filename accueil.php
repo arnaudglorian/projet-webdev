@@ -12,7 +12,7 @@
 <body>
      <!-- En-tête -->
      <header>
-        <a href="FrontP.html">
+        <a href="accueil.php">
             <img src="C:\Users\titou\OneDrive - yncréa\Documents\ISEN\Dev web\Projet\Photo_Projet\Logo_Parc_animalier_de_La_Barben.JPEG" alt="Logo du site" class="logo">
         </a>
         <h1>Parc animalier de la Barben</h1>
