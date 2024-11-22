@@ -17,9 +17,7 @@
         </a>
         <h1>Parc animalier de la Barben</h1>
         <p>Découvrez la faune sauvage au cœur de notre réserve</p>
-        <?php if(!isset($loggeduser)): ?>
-            <button class="btn-connexion" onclick="openModal()">Connexion</button>
-        <?php endif; ?>
+        <button class="btn-connexion" onclick="openModal()">Connexion</button>
     </header>
 
     <div class="modal" id="loginModal" >
