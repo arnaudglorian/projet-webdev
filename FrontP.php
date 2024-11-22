@@ -44,13 +44,11 @@
 
  <!-- Menu de navigation -->
  <nav>
-    <a href="#plan">Plan du zoo</a>
     <a href="#contact">Contact</a>
     <a href="#avis">Avis</a>
-    <a href="#horaires">Horaires</a>
-    <a href="#tarifs">Tarifs</a>
-    <a href="Animaux.html">Les animaux</a>
-    <a href="#billeterie">Billeterie</a>
+    <a href="Les_animaux.html">Les animaux</a>
+    <a href="billeterie.html">Billeterie</a>
+    <a href="Nosservices.html">Nos services</a>
 </nav>
 
  <!-- Section d'introduction -->

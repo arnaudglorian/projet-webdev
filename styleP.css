@@ -1,3 +1,9 @@
+body, html {
+
+    background-color:#927759 ;
+
+}
+
 /* En-tête */
 
 header {
@@ -8,10 +14,9 @@ header {
    
 }
 
-h1 {
+header h1 {
     font-family: 'Arial';
     font-size: 40px;
-
 }
 
 .logo {
@@ -66,7 +71,8 @@ nav a:hover {
 .section {
     padding: 1px;
     place-items: center;
-    background-color: #927759
+    background-color: #927759;
+    
 }
 
 .section h2 {
@@ -78,6 +84,7 @@ nav a:hover {
     font-size: 30px;
 }
 
+/* Contact */
 
 footer {
     background-color: #333;
