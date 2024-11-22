@@ -122,6 +122,9 @@ nav a:hover {
 
 .carousel-item.active {
     display: block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
 }
 
 .carousel img {
