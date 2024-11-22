@@ -321,3 +321,112 @@ footer p {
     width: 100%;
     height: auto;
 }
+
+.Wallaby {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.Wallaby:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.Wallaby h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.Wallaby img {
+    width: 100%;
+    height: auto;
+}
+
+.Emeu {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.Emeu:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.Emeu h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.Emeu img {
+    width: 100%;
+    height: auto;
+}
+
+.flamantrose {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.flamantrose:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.flamantrose h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.flamantrose img {
+    width: 100%;
+    height: auto;
+}
+
+.pecari {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.pecari:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.pecari h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.pecari img {
+    width: 100%;
+    height: auto;
+}
+
