@@ -240,3 +240,57 @@ footer p {
     width: 100%;
     height: auto;
 }
+
+.MoutonNoir {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.MoutonNoir:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.MoutonNoir h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.MoutonNoir img {
+    width: 100%;
+    height: auto;
+}
+
+.Yack {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    transition: transform 0.3s;
+}
+
+.Yack:hover {
+    transform: scale(1.05); /* Légère mise en avant au survol */
+}
+
+.Yack h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+.Yack img {
+    width: 100%;
+    height: auto;
+}
