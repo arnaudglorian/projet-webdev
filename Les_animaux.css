@@ -186,12 +186,19 @@ footer p {
     transition: transform 0.3s;
 }
 
-.price-card:hover {
+.Marabout:hover {
     transform: scale(1.05); /* Légère mise en avant au survol */
 }
 
-.price-card h2 {
+.Marabout h2 {
     margin-bottom: 10px;
     font-size: 1.5rem;
     color: #333;
+}
+
+
+
+.Marabout img {
+    width: 100%;
+    height: auto;
 }
