@@ -78,4 +78,5 @@
 <footer id="contact">
     <p>Contactez-nous : parcanimalier@labarbene.fr | Téléphone : 01 23 45 67 89</p>
     <p>&copy; La barbene - Tous droits réservés</p>
+
 </footer>
