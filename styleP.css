@@ -1,0 +1,93 @@
+/* En-tête */
+
+header {
+    background-color: #927759;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+   
+}
+
+header h1 {
+    font-family: 'Arial';
+    font-size: 40px;
+}
+
+.logo {
+    position: absolute;         /* Place le logo dans le coin */
+    margin-top: -25px;          /* Ajustement manuel du bord de page*/
+    left: 1px;                 /* Distance depuis le bord gauche */
+    height: 179px;          
+    width: 322px;
+}
+
+/* Menu de navigation */
+
+nav {
+    text-align: center;
+    background-color: #333;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #927759;
+}
+
+/* Section d'introduction */
+
+.hero {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3FvZHo4eG12bmlwbmVsZWZueGZvYzc3c29odGF3eTF5eHd2c2FweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlH51Dpq7tazkt2/giphy.webp"); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+
+
+/* Plan du zoo */
+
+.section {
+    padding: 1px;
+    place-items: center;
+    background-color: #927759;
+    
+}
+
+.section h2 {
+
+    padding: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Arial';
+    font-size: 30px;
+}
+
+/* Contact */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}

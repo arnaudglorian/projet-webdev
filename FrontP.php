@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Parc animalier Barben</title>
+    <link rel="stylesheet" type="text/css" href ="styleP.css">
+    <script type="text/javascript" src="jsprojet.js"></script>
+    <link rel="stylesheet" type="text/css" href ="boutonConn.css">
+    <script type="text/javascript" src="boutonConn.js"></script>
+</head>
+
+<body>
+     <!-- En-tête -->
+     <header>
+        <a href="FrontP.html">
+            <img src="C:\Users\titou\OneDrive - yncréa\Documents\ISEN\Dev web\Projet\Photo_Projet\Logo_Parc_animalier_de_La_Barben.JPEG" alt="Logo du site" class="logo">
+        </a>
+        <h1>Parc animalier de la Barben</h1>
+        <p>Découvrez la faune sauvage au cœur de notre réserve</p>
+        <?php if(!isset($loggeduser)): ?>
+            <button class="btn-connexion" onclick="openModal()">Connexion</button>
+        <?php endif; ?>
+    </header>
+
+    <div class="modal" id="loginModal" >
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal()">X</button>
+        <h2>Connexion</h2>
+        <?php require_once(__DIR__ . '/login.php'); ?>
+        <p>    </p>
+        <button class="btn-connexion" onclick="openModal2()">inscription</button>
+    </div>
+    </div>
+
+    <div class="modal2" id="inscrModal">
+    <div class="modal-content2">
+        <button class="close-btn" onclick="closeModal2()">X</button>
+        <h2>Inscription</h2>
+        <?php require_once(__DIR__ . '/signin.php'); ?>
+    </div>
+    </div>
+</body>
+</html>
+
+ <!-- Menu de navigation -->
+ <nav>
+    <a href="#plan">Plan du zoo</a>
+    <a href="#contact">Contact</a>
+    <a href="#avis">Avis</a>
+    <a href="#horaires">Horaires</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="Animaux.html">Les animaux</a>
+    <a href="#billeterie">Billeterie</a>
+</nav>
+
+ <!-- Section d'introduction -->
+ <div class="hero" id="home">
+    <h2>Bienvenue au Parc animalier de la Barben</h2>
+    <p>Un lieu unique pour découvrir les merveilles de la faune et de la flore.</p>
+    <?php if (isset($loggedUser)) : ?>
+            <p>Bienvenue <?php echo $loggedUser['email']; ?> !</p>
+    <?php endif; ?>
+</div>
+
+
+ <!-- Plan du parc -->
+<div class="section" id="plan">
+    <h2>Plan du parc</h2>
+    <img src="C:\Users\titou\OneDrive - yncréa\Documents\ISEN\Dev web\Projet\Photo_Projet\PLANS-DU-PARC-2024-WEB-FR-1.jpg" alt="Plan du parc" width="1100" et height="600">
+</div>
+
+<!-- Section Contact -->
+<footer id="contact">
+    <p>Contactez-nous : parcanimalier@labarbene.fr | Téléphone : 01 23 45 67 89</p>
+    <p>&copy; La barbene - Tous droits réservés</p>
+</footer>
