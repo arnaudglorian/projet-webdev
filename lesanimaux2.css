@@ -84,3 +84,57 @@ nav a {
 nav a:hover {
     background-color: #927759;
 }
+
+/* Contenu principal */
+.main-content2 {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Galerie d'images */
+.image-gallery2 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espacement horizontal entre les images */
+    flex-wrap: wrap; /* Permet aux images de se déplacer sur plusieurs lignes */
+    row-gap: 2rem; /* Espacement vertical entre les lignes d'images */
+}
+
+.image-container2 {
+    position: relative;
+    width: 300px;  /* Taille fixe du conteneur d'image */
+    margin: 10px;  /* Ajoute de l'espace autour de chaque image */
+}
+
+.image-container2 img {
+    width: 300px;  /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+    object-fit: cover; /* Maintien de la proportion de l'image sans déformation */
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.image-container2 img:hover {
+    transform: scale(1.1);
+}
+
+/* Étiquette de l'image */
+.image-label2 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.image-container2:hover .image-label {
+    opacity: 1;
+}
