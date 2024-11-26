@@ -499,8 +499,7 @@ nav a:hover {
     height: auto;
 }
 
-
-.ibis2 {
+.dromadaire {
     width: 300px;
     padding: 20px;
     border-radius: 10px;
@@ -510,11 +509,11 @@ nav a:hover {
     transition: transform 0.3s;
 }
 
-.ibis2:hover {
+.dromadaire:hover {
     transform: scale(1.05); /* Légère mise en avant au survol */
 }
 
-.ibis2 h2 {
+.dromadaire h2 {
     margin-bottom: 10px;
     font-size: 1.5rem;
     color: #333;
@@ -522,10 +521,13 @@ nav a:hover {
 
 
 
-.ibis2 img {
+.dromadaire img {
     width: 100%;
     height: auto;
 }
+
+
+
 
 
 
