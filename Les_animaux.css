@@ -499,32 +499,15 @@ nav a:hover {
     height: auto;
 }
 
-.bison {
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    
-    transition: transform 0.3s;
-}
-
-.bison:hover {
-    transform: scale(1.05); /* Légère mise en avant au survol */
-}
-
-.bison h2 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: #333;
-}
 
 
 
-.bison img {
-    width: 100%;
-    height: auto;
-}
+
+
+
+
+
+
 
 
 
