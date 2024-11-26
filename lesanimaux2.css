@@ -218,7 +218,7 @@ nav a:hover {
     width: 300px;  /* Largeur de l'image */
     height: 200px; /* Hauteur de l'image */
     object-fit: cover; /* Maintien de la proportion de l'image sans déformation */
-    border: 2px solid blue;
+    border: 2px solid pink;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
