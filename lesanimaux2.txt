@@ -127,8 +127,10 @@
 <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/ibis.jpg?raw=true">
 </div>
 
-<div class="dromadaire" id="dromadaire">
-    <h2>Ibis </h2>
+<div class="ibis2" id="ibis2">
+    <h2>lynx </h2>
+<img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/ibis.jpg?raw=true">
+</div>
 
 
 
@@ -146,9 +148,8 @@
 
 
 
-
-
-
+</section>
+</main>
 
 <footer id="contact">
     <p>Contactez-nous : parcanimalier@labarbene.fr | Téléphone : 01 23 45 67 89</p>

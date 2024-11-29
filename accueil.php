@@ -79,5 +79,10 @@
 <footer id="contact">
     <p>Contactez-nous : parcanimalier@labarbene.fr | Téléphone : 01 23 45 67 89</p>
     <p>&copy; La barbene - Tous droits réservés</p>
+        <div class="instagram">
+        <a href="https://www.instagram.com/zoobarben/" target="_blank" class="instagram-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+        </a>
+    </div>
 
 </footer>
