@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title> Parc animalier Barben</title>
     <link rel="stylesheet" type="text/css" href ="accueil.css">
-    <script type="text/javascript" src="accueil.js"></script>
+    <script type="text/javascript" src="connexion.js"></script>
     <link rel="stylesheet" type="text/css" href ="boutonConn.css">
     <script type="text/javascript" src="boutonConn.js"></script>
 </head>
@@ -24,7 +24,7 @@
     <div class="modal-content">
         <button class="close-btn" onclick="closeModal()">X</button>
         <h2>Connexion</h2>
-        <?php require_once(__DIR__ . '/login.php'); ?>
+        <?php require(__DIR__ . '/login.php'); ?>
         <p>    </p>
         <button class="btn-connexion" onclick="openModal2()">inscription</button>
     </div>
@@ -60,6 +60,7 @@
             </script>
     <?php endif; ?>
     <?php if (isset($signedUser)) : ?>
+            <script>store($signedUser)</script>
             <p>Bienvenue <?php echo $signedUser['username']; ?> !</p>
             <script>
                 document.getElementsByClassName("btn-connexion").style.display = "none";

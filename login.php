@@ -54,7 +54,7 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
    	Si utilisateur/trice est non identifié(e), on affiche le formulaire
 	-->
 <?php if (!isset($loggedUser)) : ?>
-	<form action="accueil.php" method="POST">
+	<form action="accueil.php" id="loginForm" method="POST">
     	<!-- si message d'erreur on l'affiche -->
     	<?php if (isset($errorMessage)) : ?>
         	<div class="alert alert-danger" role="alert">
@@ -63,11 +63,11 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
     	<?php endif; ?>
     	<div class="mb-3">
 			<div id="email-help" class="form-text">Email utilisé lors de la création de compte</div>
-        	<input type="email" class="form-control" id="email" name="email" aria-describedby="email-help" placeholder="you@exemple.com">
+        	<input type="email" class="form-control" id="email" name="email" aria-describedby="email-help" placeholder="you@exemple.com" required>
     	</div>
     	<div class="mb-3">
         	<label for="password" class="form-label">Mot de passe</label>
-        	<input type="password" class="form-control" id="password" name="password">
+        	<input type="password" class="form-control" id="password" name="password" required>
     	</div>
     	<button type="submit" class="login-btn">Se Connecter</button>
 	</form>
