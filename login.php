@@ -33,13 +33,11 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
             	$user['mail'] === $postData['email'] &&
             	$user['password'] === $postData['password']
         	) {
-            	$loggedUser = [
-                	'username' => $user['username'],
-            	];
+            	$_SESSION['username'] = $user['username'];
         	}
     	}
 
-    	if (!isset($loggedUser)) {
+    	if (!isset($_SESSION['username'])) {
         	$errorMessage = sprintf(
             	'Les informations envoyées ne permettent pas de vous identifier : (%s/%s)',
             	$postData['email'],
@@ -53,7 +51,7 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
 	<!--
    	Si utilisateur/trice est non identifié(e), on affiche le formulaire
 	-->
-<?php if (!isset($loggedUser)) : ?>
+<?php if (!isset($_SESSION['username'])) : ?>
 	<form action="accueil.php" id="loginForm" method="POST">
     	<!-- si message d'erreur on l'affiche -->
     	<?php if (isset($errorMessage)) : ?>
@@ -74,6 +72,6 @@ if (isset($postData['email']) &&  isset($postData['password'])) {
 	<!-- Si utilisateur/trice bien connectée on affiche un message de succès -->
 <?php else : ?>
 	<div class="alert alert-success" role="alert">
-    	Bonjour <?php echo $loggedUser['username']; ?> et bienvenue sur le site !
+    	Bonjour <?php echo $_SESSION['username']; ?> et bienvenue sur le site !
 	</div>
 <?php endif; ?>
