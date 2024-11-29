@@ -9,7 +9,7 @@
     <script type="text/javascript" src="boutonConn.js"></script>
 </head>
 
-<body>
+<body onload="checkConn()">
      <!-- En-tête -->
      <header>
         <a href="accueil.php">
@@ -44,7 +44,7 @@
  <nav>
     <a href="#contact">Contact</a>
     <a href="avis.html">Avis</a>
-    <a href="lesanimaux2.html">Les animaux</a>
+    <a href="Les_animaux.html">Les animaux</a>
     <a href="billeterie.html">Billeterie</a>
     <a href="Nosservices.html">Nos services</a>
 </nav>
@@ -79,10 +79,5 @@
 <footer id="contact">
     <p>Contactez-nous : parcanimalier@labarbene.fr | Téléphone : 01 23 45 67 89</p>
     <p>&copy; La barbene - Tous droits réservés</p>
-        <div class="instagram">
-        <a href="https://www.instagram.com/zoobarben/" target="_blank" class="instagram-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
-        </a>
-    </div>
 
 </footer>
