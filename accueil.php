@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<?php session_start(); ?>
 <head>
     <meta charset="utf-8">
     <title> Parc animalier Barben</title>
@@ -9,7 +10,7 @@
     <script type="text/javascript" src="boutonConn.js"></script>
 </head>
 
-<body onload="checkConn()">
+<body>
      <!-- En-tête -->
      <header>
         <a href="accueil.php">
@@ -17,7 +18,11 @@
         </a>
         <h1>Parc animalier de la Barben</h1>
         <p>Découvrez la faune sauvage au cœur de notre réserve</p>
-        <button class="btn-connexion" onclick="openModal()">Connexion</button>
+        <?php if (!isset($_SESSION['username'])) : ?>
+            <button class="btn-connexion" onclick="openModal()">Connexion</button>
+        <?php else: ?>
+            <button class="btn-deconnexion" onclick="<?php session_destroy();?>">Se Déconnecter </button>
+        <?php endif;?>
     </header>
 
     <div class="modal" id="loginModal" >
@@ -43,7 +48,10 @@
  <!-- Menu de navigation -->
  <nav>
     <a href="#contact">Contact</a>
+
     <a href="avis.html">Avis</a>
+    <a href="lesanimaux3.html">Les animaux</a>
+    <a href="avis.php">Avis</a>
     <a href="lesanimaux3.html">Les animaux</a>
     <a href="billeterie.html">Billeterie</a>
     <a href="Nosservices.html">Nos services</a>
@@ -53,15 +61,8 @@
  <div class="hero" id="home">
     <h2>Bienvenue au Parc animalier de la Barben</h2>
     <p>Un lieu unique pour découvrir les merveilles de la faune et de la flore.</p>
-    <?php if (isset($loggedUser)) : ?>
-            <p>Bienvenue <?php echo $loggedUser['username']; ?> !</p>
-            <script>
-                document.getElementsByClassName("btn-connexion").style.display = "none";
-            </script>
-    <?php endif; ?>
-    <?php if (isset($signedUser)) : ?>
-            <script>store($signedUser)</script>
-            <p>Bienvenue <?php echo $signedUser['username']; ?> !</p>
+    <?php if (isset($_SESSION['username'])) : ?>
+            <p>Bienvenue <?php echo $_SESSION['username']; ?> !</p>
             <script>
                 document.getElementsByClassName("btn-connexion").style.display = "none";
             </script>
