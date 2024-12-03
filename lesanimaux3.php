@@ -2,12 +2,21 @@
 <?php
 
 session_start();
-
+try {
+    // On se connecte à MySQL
+    $mysqlClient = new PDO('mysql:host=localhost;dbname=zoo;charset=utf8', 'root', '',[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],);
+} catch (Exception $e) {
+    // En cas d'erreur, on affiche un message et on arrête tout
+    die('Erreur : ' . $e->getMessage());
+}
 include 'includeDB.php';
 
-$sql="SELECT * FROM enclosures";
+$sql="SELECT biome_name,animals.name,enclosures.id,enclosures.meal FROM biomes INNER JOIN (enclosures INNER JOIN (relation_enclos_animals INNER JOIN animals ON relation_enclos_animals.id_animal=animals.id) ON relation_enclos_animals.id_enclos=enclosures.id) ON enclosures.id_biomes=biomes.id GROUP BY enclosures.id";
 $stmt=$pdo->query($sql);
-$enclos_data =$stmt->fetchAll();
+$enclos_data =$stmt->fetchAll(); 
+$sql2="SELECT * FROM biomes";
+$stmt2=$pdo->query($sql2);
+$biomes_data=$stmt2->fetchAll();
 ?>
 <html lang="fr">
 <head>
@@ -26,33 +35,48 @@ $enclos_data =$stmt->fetchAll();
     <nav>
         <a href="accueil.php">Accueil</a>
         <a href="#contact">Contact</a>
-        <a href="#Les Clairières">Les Clairières</a>
+        <?php foreach($biomes_data as $biomes):?>
+            <a href="#<?=$biomes['biome_name']?>"><?=$biomes['biome_name']?></a>
+        <?php endforeach ;?>
         <a href="billeterie.html">Billeterie</a>
     </nav>
 
     <!-- Contenu principal -->
     <main class="main-content">
         <section>
-            <h2>Les Clairières</h2>
+        <?php foreach($biomes_data as $biomes):?>
+            <h2 id="<?=$biomes['biome_name']?>"><?=$biomes['biome_name']?></h2>
 
             <!-- Enclos -->
             <?php foreach($enclos_data as $enclos):?>
-                <div class="enclos" data-enclos="<?=$enclos['id']?>">
-                    <h3>Enclos <?=$enclos['id']?></h3>
-                    <div class="image-gallery">
-                        <div class="image-container">
-                            <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/marabout.jpg?raw=true" alt="Marabout">
-                            <span class="image-label">Marabout</span>
-                            <p>Le marabout est un grand oiseau échassier, appartenant à la famille des cigognes, reconnaissable à son long bec puissant et à son cou dépourvu de plumes.</p>
-                            <p>Horaire:<?=$enclos['meal']?></p>
-                        </div>
-                        <div class="image-container">
-                            <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/cigognee.jpg?raw=true" alt="Cigogne">
-                            <span class="image-label">Cigogne</span>
-                        </div>
+                <?php if ($enclos['biome_name']==$biomes['biome_name']):?>
+                    <div class="enclos" data-enclos="<?=$enclos['id']?>">
+                        <h3>Enclos <?=$enclos['id']?></h3>  
+                            <div class="image-gallery">
+                            <?php 
+                            $sql3="SELECT * FROM animals INNER JOIN relation_enclos_animals ON relation_enclos_animals.id_animal=animals.id WHERE relation_enclos_animals.id_enclos=:enclo";
+                            $stmt3=$pdo->prepare($sql3);
+                            $stmt3->execute(['enclo'=>$enclos['id']]);
+                            $animals_data=$stmt3->fetchAll();
+                            ?>
+                            <?php foreach($animals_data as $animals):?>
+                                
+                                <div class="image-container">
+                                
+                                
+                                    <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/marabout.jpg?raw=true" alt="<?=$animals['name']?>">
+                                    <span class="image-label"><?=$animals['name']?></span>
+                                    <p>Le marabout est un grand oiseau échassier, appartenant à la famille des cigognes, reconnaissable à son long bec puissant et à son cou dépourvu de plumes. Horaire du repas:<?=$enclos['meal']?></p>
+                                    
+                                
+                                
+                                </div>
+                            <?php endforeach ;?>
+                            </div>
                     </div>
-                </div>
+                <?php endif ;?>
             <?php endforeach;?>
+        <?php endforeach;?>
             <!-- Enclos 2 -->
             <div class="enclos" data-enclos="2">
                 <h3>Enclos des Mammifères</h3>
