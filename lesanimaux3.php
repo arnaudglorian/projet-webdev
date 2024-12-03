@@ -64,7 +64,7 @@ $biomes_data=$stmt2->fetchAll();
                                 <div class="image-container">
                                 
                                 
-                                    <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/marabout.jpg?raw=true" alt="<?=$animals['name']?>">
+                                    <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/<?=$animals['name']?>.jpg?raw=true" alt="<?=$animals['name']?>">
                                     <span class="image-label"><?=$animals['name']?></span>
                                     <p>Le marabout est un grand oiseau échassier, appartenant à la famille des cigognes, reconnaissable à son long bec puissant et à son cou dépourvu de plumes. Horaire du repas:<?=$enclos['meal']?></p>
                                     
