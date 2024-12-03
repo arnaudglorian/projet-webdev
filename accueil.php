@@ -49,7 +49,7 @@
  <nav>
     <a href="#contact">Contact</a>
     <a href="avis.php">Avis</a>
-    <a href="Les_animaux.html">Les animaux</a>
+    <a href="Lesanimaux3.php">Les animaux</a>
     <a href="billeterie.html">Billeterie</a>
     <a href="Nosservices.html">Nos services</a>
 </nav>
