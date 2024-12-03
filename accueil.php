@@ -48,8 +48,11 @@
  <!-- Menu de navigation -->
  <nav>
     <a href="#contact">Contact</a>
+
+    <a href="avis.html">Avis</a>
+    <a href="lesanimaux3.html">Les animaux</a>
     <a href="avis.php">Avis</a>
-    <a href="Les_animaux.html">Les animaux</a>
+    <a href="lesanimaux3.html">Les animaux</a>
     <a href="billeterie.html">Billeterie</a>
     <a href="Nosservices.html">Nos services</a>
 </nav>
