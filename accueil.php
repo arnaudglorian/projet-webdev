@@ -58,7 +58,7 @@
             <a href="horaire.php">Horaire<a>
         <?php endif;?>
     <?php endif;?>
-    <a href="avis.html">Avis</a>
+    
 
     <a href="lesanimaux3.php">Les animaux</a>
 
