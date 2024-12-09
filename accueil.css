@@ -22,7 +22,6 @@ header h1 {
 .logo {
     position: absolute;         /* Place le logo dans le coin */
     margin-top: -25px;          /* Ajustement manuel du bord de page*/
-    left: 1px;                 /* Distance depuis le bord gauche */
     height: 179px;          
     width: 322px;
 }
