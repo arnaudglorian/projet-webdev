@@ -30,22 +30,21 @@ body, html {
     padding: 20px;
 }
 
+/* Menu de navigation */
+
 nav {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-nav a {
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
+    text-align: center;
+    background-color: #333;
 }
 
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
 nav a:hover {
-    background-color:#927759;
+    background-color: #927759;
 }
 
 
