@@ -107,18 +107,12 @@ nav a:hover {
     color: white;
 }
 
-.price-card.enfants .button{
-    border-radius: 10px ;
-}
 
 .price-card.train {
     background-color: #A9A9A9; 
     color: white;
 }
 
-.price-card.train .button{
-    border-radius: 10px ;
-}
 
 footer {
     background-color: #333;
