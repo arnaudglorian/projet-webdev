@@ -90,9 +90,25 @@ nav a:hover {
     color: white; /* Texte en blanc */
 }
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 .price-card.enfants {
     background-color: #A9A9A9; 
     color: white;
+}
+
+.price-card.enfants .button{
+    border-radius: 10px ;
 }
 
 .price-card.train {
@@ -100,6 +116,9 @@ nav a:hover {
     color: white;
 }
 
+.price-card.train .button{
+    border-radius: 10px ;
+}
 
 footer {
     background-color: #333;
