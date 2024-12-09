@@ -10,7 +10,7 @@ body, html {
 
 .header {
     position: relative;
-    background-image:('https://github.com/arnaudglorian/projet-webdev/blob/main/photo/singe%20nav.jpg?raw=true'); 
+    background-image: url('https://www.zoo-parc.fr/files/2016/06/cropped-planete-sauvage-saimir-animaux-guide-1.jpg');
     background-size: cover;
     background-position: center;
     height: 25vh; /* Ajustez la hauteur selon vos besoins */
@@ -90,10 +90,23 @@ nav a:hover {
     color: white; /* Texte en blanc */
 }
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 .price-card.enfants {
     background-color: #A9A9A9; 
     color: white;
 }
+
 
 .price-card.train {
     background-color: #A9A9A9; 
