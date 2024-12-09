@@ -50,7 +50,16 @@
  <nav>
     <a href="#contact">Contact</a>
 
+
     <a href="avis.php">Avis</a>
+
+    <?php if(isset($_SESSION['username'])):?>
+        <?php if($_SESSION['username']=='admin'):?>
+            <a href="horaire.php">Horaire<a>
+        <?php endif;?>
+    <?php endif;?>
+    <a href="avis.html">Avis</a>
+
     <a href="lesanimaux3.php">Les animaux</a>
 
     <a href="billeterie.html">Billeterie</a>

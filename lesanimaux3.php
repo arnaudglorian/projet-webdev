@@ -34,7 +34,6 @@ $biomes_data=$stmt2->fetchAll();
     <!-- Menu de navigation -->
     <nav>
         <a href="accueil.php">Accueil</a>
-        <a href="#contact">Contact</a>
         <?php foreach($biomes_data as $biomes):?>
             <a href="#<?=$biomes['biome_name']?>"><?=$biomes['biome_name']?></a>
         <?php endforeach ;?>
