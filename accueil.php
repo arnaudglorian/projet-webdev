@@ -50,7 +50,7 @@
  <nav>
     <a href="#contact">Contact</a>
 
-    <a href="avis.html">Avis</a>
+    <a href="avis.php">Avis</a>
     <a href="lesanimaux3.php">Les animaux</a>
 
     <a href="billeterie.html">Billeterie</a>
