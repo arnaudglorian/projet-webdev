@@ -67,7 +67,7 @@ INSERT INTO `animals` (`id`, `name`) VALUES
 (23, 'Lémurien'),
 (24, 'Chèvre naine'),
 (25, 'Mouflon'),
-(26, 'Binturong',),
+(26, 'Binturong'),
 (27, 'Loutre'),
 (28, 'Macaque crabier'),
 (29, 'Cerf'),
@@ -122,7 +122,7 @@ DROP TABLE IF EXISTS `biomes`;
 CREATE TABLE IF NOT EXISTS `biomes` (
   `id` int NOT NULL AUTO_INCREMENT,
   `color` text NOT NULL,
-  `name` text NOT NULL,
+  `biome_name` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `biomes` (
 -- Déchargement des données de la table `biomes`
 --
 
-INSERT INTO `biomes` (`id`, `color`, `name`) VALUES
+INSERT INTO `biomes` (`id`, `color`, `biome_name`) VALUES
 (1, '#70D5C2', 'La Bergerie des reptiles'),
 (2, '#A4BDCC', 'Le Vallon des cascades'),
 (3, '#B5A589', 'Le Belvédère'),
