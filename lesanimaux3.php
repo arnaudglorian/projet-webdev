@@ -77,22 +77,7 @@ $biomes_data=$stmt2->fetchAll();
                 <?php endif ;?>
             <?php endforeach;?>
         <?php endforeach;?>
-            <!-- Enclos 2 -->
-            <div class="enclos" data-enclos="2">
-                <h3>Enclos des Mammifères</h3>
-                <div class="image-gallery">
-                    <div class="image-container">
-                        <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/moutonnoir.jpg?raw=true" alt="Mouton Noir">
-                        <span class="image-label">Mouton Noir</span>
-                    </div>
-                    <div class="image-container">
-                        <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/porcepic.jpg?raw=true" alt="Porc-épic">
-                        <span class="image-label">Porc-épic</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+          
 
     <!-- Carrousel -->
     <div id="carousel" class="carousel">
