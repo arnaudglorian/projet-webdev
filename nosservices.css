@@ -30,6 +30,8 @@ body, html {
     padding: 20px;
 }
 
+
+
 /* Menu de navigation */
 
 nav {
@@ -45,8 +47,8 @@ nav a {
 }
 nav a:hover {
     background-color: #927759;
+    border-radius: 5px;
 }
-
 
 /*Listes des services*/
 

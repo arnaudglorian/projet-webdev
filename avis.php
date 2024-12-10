@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avis</title>
     <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="avis2.css">
+    <link rel="stylesheet" href="avis3.css">
 </head>
 <body>
 
@@ -48,6 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['username'])) {
     <a href="accueil.php">Accueil</a>
     <a href="#contact">Contact</a>
     <a href="billeterie.html">Billeterie</a>
+    <a href="Nosservices.html">Nos services</a>
+    <a href="lesanimaux3.php">Nos enclos et animaux</a>
     
 </nav>
 

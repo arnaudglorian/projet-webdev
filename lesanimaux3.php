@@ -40,6 +40,12 @@ $biomes_data=$stmt2->fetchAll();
         <a href="billeterie.html">Billeterie</a>
     </nav>
 
+     <!-- Barre de recherche -->
+    <div class="search-container">
+        <input type="text" id="animal-search" placeholder="Rechercher un animal...">
+        <button id="search-button">Rechercher</button>
+    </div>
+
     <!-- Contenu principal -->
     <main class="main-content">
         <section>
