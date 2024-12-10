@@ -42,8 +42,7 @@ $biomes_data=$stmt2->fetchAll();
 
      <!-- Barre de recherche -->
     <div class="search-container">
-        <input type="text" id="animal-search" placeholder="Rechercher un animal...">
-        <button id="search-button">Rechercher</button>
+        <?php require_once(__DIR__ . '/recherche.php'); ?>
     </div>
 
     <!-- Contenu principal -->
