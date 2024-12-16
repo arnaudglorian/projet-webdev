@@ -100,7 +100,7 @@ nav a:hover {
     opacity: 1; /* Nom devient visible */
 }
 
-/* Toujours cacher les descriptions sous les images */
+
 .image-container p {
     display: none; /* Description cachée en permanence */
 }
