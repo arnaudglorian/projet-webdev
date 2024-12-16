@@ -1,5 +1,34 @@
+
+
+
+<h1>Entrez votre position d'origine et de destination</h1>
+
+<!-- Formulaire HTML -->
+<form method="post" action="">
+    <label for="origine">Position d'origine :</label>
+    <input type="text" id="origine" name="origine" required>
+    <br><br>
+
+    <label for="destination">Position de destination :</label>
+    <input type="text" id="destination" name="destination" required>
+    <br><br>
+
+    <input type="submit" value="Envoyer">
+</form>
+
+<?php
+// Vérifier si le formulaire a été soumis
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les valeurs des champs
+    $start = htmlspecialchars($_POST["origine"]);
+    $end = htmlspecialchars($_POST["destination"]);
+}
+?>
+
+
 <?php
 function dijkstra($graph, $start, $end) {
+    
     // Initialisation
     $distances = [];  // Distance de départ à chaque noeud
     $previous = [];   // Prédecesseurs pour reconstituer le chemin
@@ -106,9 +135,9 @@ $graph = [
 
 ];
 
-// Entrée utilisateur : enclos de départ et d'arrivée
+/*/ Entrée utilisateur : enclos de départ et d'arrivée
 $start = 'Rhinocéros/Oryx beisa/Gnou'; // Remplacez par l'entrée de l'utilisateur
-$end = 'Hyène';   // Remplacez par l'entrée de l'utilisateur
+$end = 'Hyène';   // Remplacez par l'entrée de l'utilisateur*/
 
 // Calcul du chemin le plus court
 $result = dijkstra($graph, $start, $end);
