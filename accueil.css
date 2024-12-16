@@ -84,6 +84,13 @@ nav a:hover {
     font-size: 30px;
 }
 
+
+/* Gps */
+
+.GPS .h1{
+    text-align: center;
+}
+
 /* Contact */
 
 footer {

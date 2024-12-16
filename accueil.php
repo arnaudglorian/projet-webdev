@@ -85,10 +85,12 @@
     <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/PLANS-DU-PARC-2024-WEB-FR-1.jpg?raw=true" alt="Plan du parc" width="1100" et height="600">
 </div>
 
+    <!-- GPS -->
 
+<div class="GPS">
 
-
-<h1>Entrez votre position d'origine et de destination</h1>
+    <h1>Entrez votre position d'origine et de destination</h1>
+</div>
 
 <!-- Formulaire HTML -->
 <form method="post" action="">
@@ -169,7 +171,7 @@ function dijkstra($graph, $start, $end) {
     ];
 }
 
-// Exemple de graphe (enclos et distances entre eux)
+// Matrice d'adhèrence du graphe (uniquement les enclos de proximité)
 $graph = [
     'Ara/Perroquet' => ['Grand Hocco' => 1, 'Panda roux' => 100,'Python/Tortue/Iguane' => 60],
     'Grand Hocco' => ['Ara/Perroquet' => 1, 'Panthère' => 1],
@@ -238,7 +240,7 @@ if (!empty($result['path'])) {
 }
 ?>
 
-
+</div>
 
 <!-- Section Contact -->
 <footer id="contact">
