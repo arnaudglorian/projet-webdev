@@ -1,10 +1,9 @@
+
 body, html {
 
     background-color:#927759 ;
 
 }
-
-/* En-tête */
 
 header {
     background-color: #927759;
@@ -20,13 +19,11 @@ header h1 {
 }
 
 .logo {
-    position: absolute;         /* Place le logo dans le coin */
-    margin-top: -25px;          /* Ajustement manuel du bord de page*/
+    position: absolute;        
+    margin-top: -25px;          
     height: 179px;          
     width: 322px;
 }
-
-/* Menu de navigation */
 
 nav {
     text-align: center;
@@ -44,10 +41,9 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Section d'introduction */
 
 .hero {
-    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3FvZHo4eG12bmlwbmVsZWZueGZvYzc3c29odGF3eTF5eHd2c2FweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlH51Dpq7tazkt2/giphy.webp"); /* Image de fond */
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3FvZHo4eG12bmlwbmVsZWZueGZvYzc3c29odGF3eTF5eHd2c2FweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlH51Dpq7tazkt2/giphy.webp");
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
@@ -64,9 +60,6 @@ nav a:hover {
     font-size: 1.2em;
 }
 
-
-
-/* Plan du zoo */
 
 .section {
     padding: 1px;
@@ -85,7 +78,6 @@ nav a:hover {
 }
 
 
-/* Contact */
 
 footer {
     background-color: #333;
@@ -109,10 +101,11 @@ footer .instagram {
 footer .instagram img, .instagram-logo svg {
     width: 50px;
     height: 50px;
-    border-radius: 10px; /* Ajoute des coins arrondis (utile pour les images) */
+    border-radius: 10px; 
 }
 
 footer .instagram:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effet d'ombre au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
