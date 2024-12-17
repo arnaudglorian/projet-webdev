@@ -86,9 +86,9 @@
 </div>
 
 
+<!-- GPS -->
 
-
-<h1>Entrez votre position d'origine et de destination</h1>
+<h3>Entrez votre position d'origine et de destination</h1>
 
 <!-- Formulaire HTML -->
 <form method="post" action="">
@@ -170,7 +170,7 @@ function dijkstra($graph, $start, $end) {
     ];
 }
 
-// Exemple de graphe (enclos et distances entre eux)
+// Matrice d'adhèrence du graphe (uniquement les enclos de proximité)
 $graph = [
     'Ara/Perroquet' => ['Grand Hocco' => 1, 'Panda roux' => 100,'Python/Tortue/Iguane' => 60],
     'Grand Hocco' => ['Ara/Perroquet' => 1, 'Panthère' => 1],
@@ -239,7 +239,7 @@ if (!empty($result['path'])) {
 }
 ?>
 
-
+</div>
 
 <!-- Section Contact -->
 <footer id="contact">
