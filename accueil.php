@@ -54,7 +54,7 @@
 
     <?php if(isset($_SESSION['username'])):?>
         <?php if($_SESSION['username']=='admin'):?>
-            <a href="horaire.php">Horaire<a>
+            <a href="Horraire.php">Horaire<a>
         <?php endif;?>
     <?php endif;?>
     
@@ -65,7 +65,7 @@
     <a href="Nosservices.html">Nos services</a>
 </nav>
 
- <!-- Section d'introduction -->
+ <!-- Introduction -->
  <div class="hero" id="home">
     <h2>Bienvenue au Parc animalier de la Barben</h2>
     <p>Un lieu unique pour découvrir les merveilles de la faune et de la flore.</p>
