@@ -47,7 +47,7 @@
 
  <!-- Menu de navigation -->
  <nav>
-    <a href="#contact">Contact</a>
+    <a href="#contact">GPS</a>
 
 
     <a href="avis.php">Avis</a>
@@ -86,11 +86,14 @@
 
 
 <!-- GPS -->
+<section class="gps-section">
+    <h3><span>🧭</span> Planifiez votre visite</h3>
+    <p>Indiquez votre position d'origine et votre destination pour découvrir l'itinéraire optimal.</p>
 
-<h3>Entrez votre position d'origine et de destination</h1>
 
 <!-- Formulaire HTML -->
 <form method="post" action="">
+
     <label for="origine">Position d'origine :</label>
     <input type="text" id="origine" name="origine" required>
     <br><br>
