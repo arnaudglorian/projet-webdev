@@ -85,12 +85,10 @@
     <img src="https://github.com/arnaudglorian/projet-webdev/blob/main/photo/PLANS-DU-PARC-2024-WEB-FR-1.jpg?raw=true" alt="Plan du parc" width="1100" et height="600">
 </div>
 
-    <!-- GPS -->
 
-<div class="GPS">
+<!-- GPS -->
 
-    <h1>Entrez votre position d'origine et de destination</h1>
-</div>
+<h3>Entrez votre position d'origine et de destination</h1>
 
 <!-- Formulaire HTML -->
 <form method="post" action="">
