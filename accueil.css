@@ -18,13 +18,14 @@ header h1 {
     font-size: 40px;
 }
 
-.logo {
-    position: absolute;        
-    margin-top: -25px;          
-    height: 179px;          
-    width: 322px;
+.logo { 
+    position: absolute; /* Position absolue par rapport au parent */
+    top: 0;             /* Aligné tout en haut */
+    left: 0;            /* Aligné tout à gauche */
+    height: 179px;      /* Augmenter la hauteur pour agrandir */
+    width: 322;        /* Garde le ratio d'aspect naturel de l'image */
+    margin: 0px;       /* Espacement autour du logo */
 }
-
 nav {
     text-align: center;
     background-color: #333;
