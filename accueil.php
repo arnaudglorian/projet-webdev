@@ -43,8 +43,7 @@
         <?php require_once(__DIR__ . '/signin.php'); ?>
     </div>
     </div>
-</body>
-</html>
+
 
  <!-- Menu de navigation -->
  <nav>
@@ -238,7 +237,8 @@ if (!empty($result['path'])) {
 }
 ?>
 
-</div>
+</body>
+</html>
 
 <!-- Section Contact -->
 <footer id="contact">
