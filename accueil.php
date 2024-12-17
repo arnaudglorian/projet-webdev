@@ -102,6 +102,7 @@
 
     <input type="submit" value="Envoyer">
 </form>
+    
 
 <?php
 // Vérifier si le formulaire a été soumis
