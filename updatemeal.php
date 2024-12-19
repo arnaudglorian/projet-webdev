@@ -20,8 +20,8 @@ try {
 
     <form action="horraire.php" id="loginForm" method="POST">
     	<div class="mb-3">
-			<div id="email-help" class="form-text">Entrez l'id de l'enclo qui doit changer d'heure de</div>
-        	<input class="form-control" id="enclo" name="enclo" placeholder="id de l'enclo" required>
+			<div id="email-help" class="form-text">Entrez l'id de l'enclos</div>
+        	<input class="form-control" id="enclo" name="enclo" placeholder="id de l'enclos" required>
     	</div>
     	<div class="mb-3">
         	<label class="form-label">Entrez la nouvelle heure de repas</label>
