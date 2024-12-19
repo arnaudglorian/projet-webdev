@@ -1,8 +1,6 @@
-/* style.css */
+
 
 body, html {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: grey;
@@ -98,7 +96,6 @@ nav a:hover {
     font-size: 16px;
     color: #fff;
     background-color: black;
-    text-decoration: none;
     border-radius: 5px;
     text-align: center;
 }
@@ -132,7 +129,6 @@ footer p {
 
 footer .instagram {
     display: inline-block;
-    text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -145,18 +141,5 @@ footer .instagram img, .instagram-logo svg {
 footer .instagram:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effet d'ombre au survol */
-}
-
-
-    
-    .Horaires {
-       
-            background-color: #A9A9A9; 
-            color: white;
-            text-align:center;
-            
-
-        
-    
 }
 

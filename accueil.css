@@ -10,21 +10,13 @@ header {
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
-   
 }
 
-header h1 {
-    font-family: 'Arial';
-    font-size: 40px;
-}
 
 .logo { 
     position: absolute; /* Position absolue par rapport au parent */
-    top: 0;             /* Aligné tout en haut */
-    left: 0;            /* Aligné tout à gauche */
     height: 179px;      /* Augmenter la hauteur pour agrandir */
     width: 322;        /* Garde le ratio d'aspect naturel de l'image */
-    margin: 0px;       /* Espacement autour du logo */
 }
 nav {
     text-align: center;
