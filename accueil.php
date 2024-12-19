@@ -108,10 +108,12 @@
 
 <?php
 // Vérifier si le formulaire a été soumis
+if(isset($_POST['origine'])){
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les valeurs des champs
     $start = htmlspecialchars($_POST["origine"]);
     $end = htmlspecialchars($_POST["destination"]);
+}
 }
 ?>
 
