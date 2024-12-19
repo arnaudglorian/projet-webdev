@@ -1,8 +1,6 @@
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
     background-color: white;
     color: #333;
@@ -33,7 +31,7 @@ nav a:hover {
     background-color: #927759;
 }
 
-/* Contenu principal */
+
 .main-content {
     padding: 2rem;
     text-align: center;
