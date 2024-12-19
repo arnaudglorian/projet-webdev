@@ -12,11 +12,12 @@ header {
     text-align: center;
 }
 
-
-.logo { 
-    position: absolute; /* Position absolue par rapport au parent */
-    height: 179px;      /* Augmenter la hauteur pour agrandir */
-    width: 322;        /* Garde le ratio d'aspect naturel de l'image */
+.logo {
+    position: absolute; /* Position absolue par rapport à la page */
+    top: 0;             /* Positionne le logo en haut */
+    left: 0;            /* Positionne le logo à gauche */
+    height: 160px;      /* Hauteur du logo */
+    width: auto;        /* Largeur auto pour garder le ratio de l'image */
 }
 nav {
     text-align: center;
