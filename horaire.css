@@ -1,0 +1,152 @@
+/* Réinitialisation et styles de base */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial'; /* Police moderne */
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth; /* Défilement fluide */
+}
+
+/* En-tête */
+.header {
+    position: relative;
+    background-image: url('https://www.zoo-parc.fr/files/2016/06/cropped-planete-sauvage-saimir-animaux-guide-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.header-title {
+    font-size: 3rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+/* ================= NAVIGATION ================= */
+nav {
+    text-align: center;
+    background-color: #333;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #927759;
+    border-radius: 5px;
+}
+
+/* ================= SECTION PRINCIPALE ================= */
+section {
+    padding: 30px 20px;
+}
+
+.container {
+    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* ================= FORMULAIRE ================= */
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* ================= Formulaire : Bouton ================= */
+button {
+    background-color: #45a049; /* Vert doux */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px; /* Réduire la taille du padding */
+    font-size: 0.9rem; /* Taille de la police un peu plus petite */
+    cursor: pointer;
+    width: auto; /* Ajuste la largeur du bouton */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c; /* Vert foncé au survol */
+    transform: scale(1.05);
+}
+
+
+/* ================= PIED DE PAGE ================= */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #8e44ad; /* Couleur de survol pour les liens */
+}
+
+/* ================= STYLES RESPONSIVES ================= */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}
