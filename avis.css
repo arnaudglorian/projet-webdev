@@ -1,12 +1,8 @@
-/* Page Globale */
-
 body, html {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: grey;
 }
-
-/* En-Tête */
 
 .header {
     position: relative;
@@ -20,8 +16,13 @@ body, html {
     color: white;
 }
 
-/* Menu de navigation */
-
+.header-title {
+    position: absolute;
+    font-size: 2.5rem; /* Ajustez la taille du texte selon vos besoins */
+    text-align: center;
+   border-radius: 5px;
+}
+/* Navigation */
 nav {
     text-align: center;
     background-color: #333;
@@ -35,153 +36,111 @@ nav a {
 }
 nav a:hover {
     background-color: #927759;
+    border-radius: 5px;
 }
 
-
-/* Section Avis */
+/* Section des avis */
 .reviews {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
-
-.reviews-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.review-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 300px;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px auto;
+    max-width: 900px;
 }
 
-.review-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.review-text {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
-.review-author {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.review-author img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-}
-
-.review-author h4 {
-    margin: 0;
-    font-size: 1rem;
-    color: #333;
-}
-
-.review-author span {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-/* Formulaire pour écrire un avis */
-.review-form {
-    margin-top: 40px;
+.reviews h2 {
     text-align: center;
+    color: black;
+    font-size: 1.8em;
+    margin-bottom: 20px;
 }
 
-.review-form h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #333;
+.review-form {
+    margin-bottom: 30px;
 }
 
 .review-form form {
-    max-width: 500px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    align-items: center;
 }
 
-.review-form input, .review-form textarea {
+.review-form textarea {
     width: 100%;
     padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-.review-form input:focus, .review-form textarea:focus {
-    border-color: #333;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 100px;
+    max-width: 100%;
 }
 
 .review-form button {
     padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #333;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .review-form button:hover {
-    background-color: #555;
+    background-color: #45a049;
 }
 
+/* Liste des avis */
+.reviews-list {
+    margin-top: 30px;
+}
 
-/* Contact */
+.reviews-list h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 20px;
+}
 
+.review-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.review-card h4 {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.review-card small {
+    font-size: 0.8em;
+    color: #777;
+}
+
+/* Footer */
 footer {
+    text-align: center;
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
 
 footer p {
-    margin: 5px;
-}
-
-footer .instagram {
-    display: inline-block;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-footer .instagram img, .instagram-logo svg {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px; /* Ajoute des coins arrondis (utile pour les images) */
-}
-
-footer .instagram:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effet d'ombre au survol */
+    margin: 0;
+    font-size: 1em;
 }

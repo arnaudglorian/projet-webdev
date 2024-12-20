@@ -10,10 +10,10 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 include 'includeDB.php';
-
+//utilisation de plusieurs jointures pour lier les tables biomes,enclosures et animals
 $sql="SELECT biome_name,animals.name,enclosures.id,enclosures.meal FROM biomes INNER JOIN (enclosures INNER JOIN (relation_enclos_animals INNER JOIN animals ON relation_enclos_animals.id_animal=animals.id) ON relation_enclos_animals.id_enclos=enclosures.id) ON enclosures.id_biomes=biomes.id GROUP BY enclosures.id";
 $stmt=$pdo->query($sql);
-$enclos_data =$stmt->fetchAll(); 
+$enclos_data =$stmt->fetchAll();        //resultat des requetes stockées qui contiennent respectivement les données des enclos et des biomes
 $sql2="SELECT * FROM biomes";
 $stmt2=$pdo->query($sql2);
 $biomes_data=$stmt2->fetchAll();
@@ -26,15 +26,15 @@ $biomes_data=$stmt2->fetchAll();
     <link rel="stylesheet" href="lesanimaux3.css">
 </head>
 
-<body>
+<body> 
     <header class="header">
         <h1>Nos animaux</h1>
     </header>
 
     <!-- Menu de navigation -->
-    <nav>
+    <nav> 
         <a href="accueil.php">Accueil</a>
-        <?php foreach($biomes_data as $biomes):?>
+        <?php foreach($biomes_data as $biomes):?>  
             <a href="#<?=$biomes['biome_name']?>"><?=$biomes['biome_name']?></a>
         <?php endforeach ;?>
         <a href="billeterie.html">Billeterie</a>
@@ -53,7 +53,7 @@ $biomes_data=$stmt2->fetchAll();
 
             <!-- Enclos -->
             <?php foreach($enclos_data as $enclos):?>
-                <?php if ($enclos['biome_name']==$biomes['biome_name']):?>
+                <?php if ($enclos['biome_name']==$biomes['biome_name']):?>  
                     <div class="enclos" data-enclos="<?=$enclos['id']?>">
                         <h3>Enclos <?=$enclos['id']?></h3>  
                             <div class="image-gallery">

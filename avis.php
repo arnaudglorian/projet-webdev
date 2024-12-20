@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start(); //connection a une session php nécessaire pour connaitre les informations de l'utilisateur
 
 // Activer les messages d'erreur pour le débogage
 ini_set('display_errors', 1);
@@ -15,7 +15,7 @@ try {
 }
 
 // Soumission d'un avis
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['username'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['username'])) {  //verifie que l'utilisateur est bien connecté
     $name = $_SESSION['username']; // Récupérer le nom de l'utilisateur connecté
     $review = htmlspecialchars($_POST['reviewText']); // Échapper le contenu de l'avis
 
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avis</title>
     <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="avis3.css">
+    <link rel="stylesheet" href="avis.css">
 </head>
 <body>
 
